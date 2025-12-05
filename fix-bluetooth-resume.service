@@ -1,0 +1,10 @@
+[Unit]
+Description=Fix Bluetooth after resume
+After=hibernate.target hybrid-sleep.target suspend-then-hibernate.target bluetooth.service suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/deck/.scripts/sd-hibernation/fix-bluetooth.sh
+
+[Install]
+WantedBy=hibernate.target hybrid-sleep.target suspend-then-hibernate.target suspend.target

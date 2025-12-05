@@ -1,0 +1,10 @@
+[Unit]
+Description=Mark SteamOS boot state as good after hibernate resume
+After=suspend.target suspend-then-hibernate.target hibernate.target hybrid-sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/deck/.scripts/sd-hibernation/mark-boot-good.sh
+
+[Install]
+WantedBy=suspend.target suspend-then-hibernate.target hibernate.target hybrid-sleep.target
