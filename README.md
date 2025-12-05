@@ -1,4 +1,4 @@
-# Steamdeck Hibernate After Sleep
+# Steamdeck Hibernate After Sleep Setup Scripts
 
 This Repository is an Archive. I recommend using a systemd-sysext extensions for installing and persisting hibernation on your steamdeck: https://github.com/bentemple/steamos-extensions
 
